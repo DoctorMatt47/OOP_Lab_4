@@ -15,15 +15,15 @@
  * \tparam T Type of the elements.
  */
 template <class T>
-class VectorList final : public IList<T>, public IArray<T>
+class VectorList final : public IList<T>, public IArrayCollection<T>
 {
 private:
 	std::vector<T> _pData;
 	
 public:
 	/**
-* Default constructor. Constructs an empty container.
-*/
+	* Default constructor. Constructs an empty container.
+	*/
 	VectorList() = default;
 
 	/**
@@ -70,6 +70,8 @@ public:
 	size_t GetSize() const override;
 
 	T& operator [](size_t index) override;
+
+	shared_ptr<Iterator<T>> CreateIterator() override;
 
 	T Get(size_t i) override;
 
@@ -141,6 +143,14 @@ template <class T>
 T& VectorList<T>::operator[](size_t index)
 {
 	return _pData[index];
+}
+
+template <class T>
+shared_ptr<Iterator<T>> VectorList<T>::CreateIterator()
+{
+	auto self = this->shared_from_this();
+	shared_ptr<Iterator<T>> iterator(new ArrayIterator<T>(self));
+	return iterator;
 }
 
 template <class T>

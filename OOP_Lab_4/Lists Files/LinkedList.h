@@ -5,6 +5,8 @@
 
 #include "Node.h"
 #include "IList.h"
+#include "Iterators/IEnumerable.h"
+#include "Iterators/NodeIterator.h"
 
 
 /**
@@ -17,7 +19,7 @@
  * \tparam T The type of the elements.
  */
 template <class T>
-class LinkedList final : public IList<T>
+class LinkedList final : public IList<T>, public INodeCollection<T>
 {
 private:
 	Node<T>* _head = nullptr;	
@@ -64,6 +66,19 @@ public:
 	 * \param other Object of the same type.
 	 */
 	LinkedList<T>& operator=(LinkedList<T>&& other) noexcept;
+
+	/**
+	* Returns a Node at position index in the container.
+	* \param index Position of a node in the container.
+	* \return The Node at the specified position in the container.
+	*/
+	Node<T>* operator[](int index);
+
+	/**
+	 * Creates Iterator, which can be used to iterate through the container.
+	 * \return pointer of Iterator.
+	 */
+	shared_ptr<Iterator<T>> CreateIterator() override;
 	
 	/**
 	 * Removes all elements and fills the container with data from the vector.
@@ -81,7 +96,7 @@ public:
 	 * Returns the first element.
 	 * \return Reference to the first element.
 	 */
-	Node<T>* GetHead() const;
+	Node<T>* GetHead() const override;
 
 	/**
 	 * Returns the last element .
@@ -168,6 +183,25 @@ LinkedList<T>& LinkedList<T>::operator=(LinkedList<T>&& other) noexcept
 	other._head = nullptr;
 	other._tail = nullptr;
 	return *this;
+}
+
+template <class T>
+Node<T>* LinkedList<T>::operator[](const int index)
+{
+	Node<T>* cur = _head;
+	for (auto j = 0; j < index; j++)
+	{
+		cur = cur->GetNext();
+	}
+	return cur;
+}
+
+template <class T>
+shared_ptr<Iterator<T>> LinkedList<T>::CreateIterator()
+{
+	auto self = this->shared_from_this();
+	shared_ptr<Iterator<T>> iterator(new NodeIterator<T>(self));
+	return iterator;
 }
 
 template <class T>

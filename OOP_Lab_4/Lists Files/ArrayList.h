@@ -5,6 +5,8 @@
 
 #include "IList.h"
 #include "IArray.h"
+#include "Iterators/IArrayCollection.h"
+#include "Iterators/ArrayIterator.h"
 
 /**
  * \brief List based on array.
@@ -16,7 +18,7 @@
  * \tparam T Type of the elements.
  */
 template <class T>
-class ArrayList final : public IList<T>, public IArray<T>
+class ArrayList final : public IList<T>, public IArrayCollection<T>
 {
 private:
 	/// Size of the array.
@@ -83,6 +85,8 @@ public:
 	size_t GetSize() const override;
 
 	T& operator [](size_t index) override;
+
+	shared_ptr<Iterator<T>> CreateIterator() override;
 
 	T Get(size_t i) override;
 
@@ -199,6 +203,14 @@ T& ArrayList<T>::operator[](size_t index)
 	if (index < 0 || index > _size) 
 		throw std::exception("Invalid index");
 	return _pData[index];
+}
+
+template <class T>
+shared_ptr<Iterator<T>> ArrayList<T>::CreateIterator()
+{
+	auto self = this->shared_from_this();
+	shared_ptr<Iterator<T>> iterator(new ArrayIterator<T>(self));
+	return iterator;
 }
 
 template <class T>
