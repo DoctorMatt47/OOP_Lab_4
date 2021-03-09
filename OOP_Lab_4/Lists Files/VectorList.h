@@ -4,7 +4,6 @@
 #include <vector>
 
 #include "IList.h"
-#include "IArray.h"
 
 /**
  * \brief List based on vector.
@@ -19,6 +18,7 @@ class VectorList final : public IList<T>, public IArrayCollection<T>
 {
 private:
 	std::vector<T> _pData;
+	shared_ptr<IArraySort<T>> _sort;
 	
 public:
 	/**
@@ -66,6 +66,10 @@ public:
 	 * \return The size of the currently allocated storage capacity in the container.
 	 */
 	size_t GetCapacity() const;
+
+	void SetSort(shared_ptr<IArraySort<T>> sort);
+
+	bool Sort();
 
 	size_t GetSize() const override;
 
@@ -131,6 +135,21 @@ template <class T>
 size_t VectorList<T>::GetCapacity() const
 {
 	return _pData.capacity();
+}
+
+template <class T>
+void VectorList<T>::SetSort(shared_ptr<IArraySort<T>> sort)
+{
+	_sort = sort;
+}
+
+template <class T>
+bool VectorList<T>::Sort()
+{
+	if (_sort == nullptr)
+		return false;
+	_sort->Execute();
+	return true;
 }
 
 template <class T>

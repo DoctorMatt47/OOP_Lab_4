@@ -4,9 +4,9 @@
 #include <vector>
 
 #include "IList.h"
-#include "IArray.h"
 #include "Iterators/IArrayCollection.h"
 #include "Iterators/ArrayIterator.h"
+#include "Sorts/ArraySort/IArraySort.h"
 
 /**
  * \brief List based on array.
@@ -29,6 +29,8 @@ private:
 
 	/// Pointer to the array.
 	T* _pData;
+
+	shared_ptr<IArraySort<T>> _sort;
 
 	/**
 	 * Creates new array with larger capacity and copies data from the old array.
@@ -81,6 +83,10 @@ public:
 	 * \return The size of the currently allocated storage capacity in the container.
 	 */
 	size_t GetCapacity() const;
+
+	void SetSort(shared_ptr<IArraySort<T>> sort);
+
+	bool Sort();
 
 	size_t GetSize() const override;
 
@@ -195,6 +201,21 @@ template <class T>
 size_t ArrayList<T>::GetCapacity() const
 {
 	return _capacity;
+}
+
+template <class T>
+void ArrayList<T>::SetSort(shared_ptr<IArraySort<T>> sort)
+{
+	_sort = sort;
+}
+
+template <class T>
+bool ArrayList<T>::Sort()
+{
+	if (_sort == nullptr)
+		return false;
+	_sort->Execute(*this);
+	return true;
 }
 
 template <class T>
