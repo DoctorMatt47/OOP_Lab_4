@@ -7,6 +7,7 @@
 #include "IList.h"
 #include "Iterators/IEnumerable.h"
 #include "Iterators/NodeIterator.h"
+#include "Sorts/NodeSort/INodeSort.h"
 
 
 /**
@@ -25,6 +26,8 @@ private:
 	Node<T>* _head = nullptr;	
 	Node<T>* _tail = nullptr;
 	size_t _currentSize = 0;
+
+	shared_ptr<INodeSort<T>> _sort;
 	
 public:
 	/**
@@ -90,7 +93,7 @@ public:
 	* Returns the number of elements in the container.
 	* \return The number of elements in the container.
 	*/
-	size_t GetSize() const;
+	size_t GetSize() const override;
 
 	/**
 	 * Returns the first element.
@@ -125,6 +128,10 @@ public:
 	* \param data The element value to add.
 	*/
 	void PushFront(T data);
+
+	void SetSort(shared_ptr<INodeSort<T>> sort);
+
+	bool Sort();
 
 	T Get(size_t i) override;
 	
@@ -307,6 +314,21 @@ void LinkedList<T>::PushFront(T data)
 		_head = newHead;
 	}
 	_currentSize++;
+}
+
+template <class T>
+void LinkedList<T>::SetSort(shared_ptr<INodeSort<T>> sort)
+{
+	_sort = sort;
+}
+
+template <class T>
+bool LinkedList<T>::Sort()
+{
+	if (_sort == nullptr) 
+		return false;
+	_sort->Execute(*this);
+	return true;
 }
 
 template <class T>
