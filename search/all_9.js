@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['linked_5fptr_112',['linked_ptr',['../classtesting_1_1internal_1_1linked__ptr.html',1,'testing::internal']]],
-  ['linked_5fptr_3c_20const_20testing_3a_3ainternal_3a_3aparamgeneratorinterface_3c_20t_20_3e_20_3e_113',['linked_ptr&lt; const testing::internal::ParamGeneratorInterface&lt; T &gt; &gt;',['../classtesting_1_1internal_1_1linked__ptr.html',1,'testing::internal']]],
-  ['linked_5fptr_5finternal_114',['linked_ptr_internal',['../classtesting_1_1internal_1_1linked__ptr__internal.html',1,'testing::internal']]],
-  ['linkedlist_115',['LinkedList',['../class_linked_list.html',1,'LinkedList&lt; T &gt;'],['../class_linked_list.html#a3c20fcfec867e867f541061a09fc640c',1,'LinkedList::LinkedList()'],['../class_linked_list.html#af3184081e57a16751b0d0ae327f77cf1',1,'LinkedList::LinkedList(std::vector&lt; T &gt; v)'],['../class_linked_list.html#a2e6c246781e458f803203e9c75c6aa90',1,'LinkedList::LinkedList(const LinkedList&lt; T &gt; &amp;other)'],['../class_linked_list.html#a49ade5698948b7b29dfef6ce94bc270d',1,'LinkedList::LinkedList(const LinkedList&lt; T &gt; &amp;&amp;other) noexcept']]],
-  ['listsorter_116',['ListSorter',['../class_list_sorter.html',1,'']]]
+  ['mergesort_57',['MergeSort',['../class_list_sorter.html#aabd7f869586a2b99a33783321e3ae5e4',1,'ListSorter::MergeSort(IArrayCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)'],['../class_list_sorter.html#ae85d55bccd156f696e35728f119ecc51',1,'ListSorter::MergeSort(LinkedList&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)']]],
+  ['movehead_58',['MoveHead',['../class_linked_list.html#a555210ddb55921cd60f67c4b8faff2a1',1,'LinkedList']]],
+  ['movenext_59',['MoveNext',['../class_array_iterator.html#ad10e80e613dc4f22fc9150148777598d',1,'ArrayIterator::MoveNext()'],['../class_iterator.html#ac79b340fb9be42f9bd6e26d27deb2842',1,'Iterator::MoveNext()'],['../class_node_iterator.html#a1c4a571f35eb4c33b2830169810b2886',1,'NodeIterator::MoveNext()']]],
+  ['movetail_60',['MoveTail',['../class_linked_list.html#afdc4011e98221da129a1c0376d7c999c',1,'LinkedList']]]
 ];

@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['face_343',['Face',['../class_face.html',1,'']]],
-  ['floatingpoint_344',['FloatingPoint',['../classtesting_1_1internal_1_1_floating_point.html',1,'testing::internal']]],
-  ['formatforcomparison_345',['FormatForComparison',['../classtesting_1_1internal_1_1_format_for_comparison.html',1,'testing::internal']]],
-  ['formatforcomparison_3c_20toprint_5bn_5d_2c_20otheroperand_20_3e_346',['FormatForComparison&lt; ToPrint[N], OtherOperand &gt;',['../classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print_0f_n_0e_00_01_other_operand_01_4.html',1,'testing::internal']]]
+  ['node_125',['Node',['../class_node.html',1,'']]],
+  ['nodebubblesort_126',['NodeBubbleSort',['../class_node_bubble_sort.html',1,'']]],
+  ['nodebucketsort_127',['NodeBucketSort',['../class_node_bucket_sort.html',1,'']]],
+  ['nodecountingsort_128',['NodeCountingSort',['../class_node_counting_sort.html',1,'']]],
+  ['nodegnomesort_129',['NodeGnomeSort',['../class_node_gnome_sort.html',1,'']]],
+  ['nodeinsertionsort_130',['NodeInsertionSort',['../class_node_insertion_sort.html',1,'']]],
+  ['nodeiterator_131',['NodeIterator',['../class_node_iterator.html',1,'']]],
+  ['nodequicksort_132',['NodeQuickSort',['../class_node_quick_sort.html',1,'']]],
+  ['nodeselectionsort_133',['NodeSelectionSort',['../class_node_selection_sort.html',1,'']]]
 ];

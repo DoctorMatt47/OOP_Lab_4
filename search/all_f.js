@@ -1,16 +1,11 @@
 var searchData=
 [
-  ['random_150',['Random',['../classtesting_1_1internal_1_1_random.html',1,'testing::internal']]],
-  ['randominitialize_151',['RandomInitialize',['../class_set.html#aa97c9cbabba72d341da073a37370c761',1,'Set']]],
-  ['rangegenerator_152',['RangeGenerator',['../classtesting_1_1internal_1_1_range_generator.html',1,'testing::internal']]],
-  ['re_153',['RE',['../classtesting_1_1internal_1_1_r_e.html',1,'testing::internal']]],
-  ['relationtosourcecopy_154',['RelationToSourceCopy',['../structtesting_1_1internal_1_1_relation_to_source_copy.html',1,'testing::internal']]],
-  ['relationtosourcereference_155',['RelationToSourceReference',['../structtesting_1_1internal_1_1_relation_to_source_reference.html',1,'testing::internal']]],
-  ['remove_156',['Remove',['../class_array_list.html#a9015ee65e7d7fbefb7da52732f69a74a',1,'ArrayList::Remove()'],['../class_i_list.html#aa72a7aa4f1360d6f6728021d9cc5b613',1,'IList::Remove()'],['../class_linked_list.html#abf2f6dee409123c7a7d3216eefdae204',1,'LinkedList::Remove()'],['../class_vector_list.html#a30b751f1aac3ab03abf3791cfc169001',1,'VectorList::Remove()']]],
-  ['removeconst_157',['RemoveConst',['../structtesting_1_1internal_1_1_remove_const.html',1,'testing::internal']]],
-  ['removeconst_3c_20const_20t_20_3e_158',['RemoveConst&lt; const T &gt;',['../structtesting_1_1internal_1_1_remove_const_3_01const_01_t_01_4.html',1,'testing::internal']]],
-  ['removeconst_3c_20const_20t_5bn_5d_3e_159',['RemoveConst&lt; const T[N]&gt;',['../structtesting_1_1internal_1_1_remove_const_3_01const_01_t_0f_n_0e_4.html',1,'testing::internal']]],
-  ['removereference_160',['RemoveReference',['../structtesting_1_1internal_1_1_remove_reference.html',1,'testing::internal']]],
-  ['removereference_3c_20t_20_26_20_3e_161',['RemoveReference&lt; T &amp; &gt;',['../structtesting_1_1internal_1_1_remove_reference_3_01_t_01_6_01_4.html',1,'testing::internal']]],
-  ['rvalueref_162',['RvalueRef',['../structtesting_1_1internal_1_1_rvalue_ref.html',1,'testing::internal']]]
+  ['selectionsort_79',['SelectionSort',['../class_list_sorter.html#a6fce82f2c6497c52a9f0552558b6f5da',1,'ListSorter::SelectionSort(IArrayCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)'],['../class_list_sorter.html#afd1cd463ec7401a9c957abf50b917863',1,'ListSorter::SelectionSort(INodeCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)']]],
+  ['set_80',['Set',['../class_set.html',1,'Set'],['../class_set.html#a1c5d4bec6a962eb5805cf9a7321e241d',1,'Set::Set()']]],
+  ['setamountoffaces_81',['SetAmountOfFaces',['../class_dice.html#af99dec3b17586ffeaec7fae5151c64fb',1,'Dice']]],
+  ['setdata_82',['SetData',['../class_node.html#ae64b72ace3bc47b80fe6a44b45fd944c',1,'Node']]],
+  ['setnext_83',['SetNext',['../class_node.html#ab6e18fc3f5c9bef5518a38070a6cc7d6',1,'Node']]],
+  ['setnumber_84',['SetNumber',['../class_face.html#a3dff44eaae310e4ff01b51e1749c35d4',1,'Face']]],
+  ['setprev_85',['SetPrev',['../class_node.html#af4620f4788d09b34f4ac252483658e3f',1,'Node']]],
+  ['setprobability_86',['SetProbability',['../class_face.html#af0fc62e5fe04d98a1b5e9d17122a3fc6',1,'Face']]]
 ];

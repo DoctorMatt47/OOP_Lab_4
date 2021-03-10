@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['mergesort_117',['MergeSort',['../class_list_sorter.html#aabd7f869586a2b99a33783321e3ae5e4',1,'ListSorter::MergeSort(IArrayCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)'],['../class_list_sorter.html#ae85d55bccd156f696e35728f119ecc51',1,'ListSorter::MergeSort(LinkedList&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)']]],
-  ['message_118',['Message',['../classtesting_1_1_message.html',1,'testing']]],
-  ['movehead_119',['MoveHead',['../class_linked_list.html#a555210ddb55921cd60f67c4b8faff2a1',1,'LinkedList']]],
-  ['movenext_120',['MoveNext',['../class_array_iterator.html#ad10e80e613dc4f22fc9150148777598d',1,'ArrayIterator::MoveNext()'],['../class_iterator.html#ac79b340fb9be42f9bd6e26d27deb2842',1,'Iterator::MoveNext()'],['../class_node_iterator.html#a1c4a571f35eb4c33b2830169810b2886',1,'NodeIterator::MoveNext()']]],
-  ['movetail_121',['MoveTail',['../class_linked_list.html#afdc4011e98221da129a1c0376d7c999c',1,'LinkedList']]],
-  ['mutex_122',['Mutex',['../classtesting_1_1internal_1_1_mutex.html',1,'testing::internal']]]
+  ['node_61',['Node',['../class_node.html',1,'Node&lt; T &gt;'],['../class_node.html#a17d32d5670a1d8e775ba545943a5862a',1,'Node::Node()']]],
+  ['nodebubblesort_62',['NodeBubbleSort',['../class_node_bubble_sort.html',1,'NodeBubbleSort&lt; T &gt;'],['../class_node_bubble_sort.html#a50b7712ee39c3bca8fbc3197f3864a54',1,'NodeBubbleSort::NodeBubbleSort()']]],
+  ['nodebucketsort_63',['NodeBucketSort',['../class_node_bucket_sort.html',1,'NodeBucketSort&lt; T &gt;'],['../class_node_bucket_sort.html#ae47632aabc8202ce612f9582c7dab666',1,'NodeBucketSort::NodeBucketSort()']]],
+  ['nodecountingsort_64',['NodeCountingSort',['../class_node_counting_sort.html',1,'NodeCountingSort&lt; T &gt;'],['../class_node_counting_sort.html#adfc8498919848486eefb072891f63b7d',1,'NodeCountingSort::NodeCountingSort()']]],
+  ['nodegnomesort_65',['NodeGnomeSort',['../class_node_gnome_sort.html',1,'NodeGnomeSort&lt; T &gt;'],['../class_node_gnome_sort.html#ad9d724c04a9870ed1a588a784aaefd9f',1,'NodeGnomeSort::NodeGnomeSort()']]],
+  ['nodeinsertionsort_66',['NodeInsertionSort',['../class_node_insertion_sort.html',1,'NodeInsertionSort&lt; T &gt;'],['../class_node_insertion_sort.html#a5989830a3966a6577a265985640d4d29',1,'NodeInsertionSort::NodeInsertionSort()']]],
+  ['nodeiterator_67',['NodeIterator',['../class_node_iterator.html',1,'NodeIterator&lt; T &gt;'],['../class_node_iterator.html#aeed2b759ab0c6e1f77344b245fa836b7',1,'NodeIterator::NodeIterator()']]],
+  ['nodequicksort_68',['NodeQuickSort',['../class_node_quick_sort.html',1,'NodeQuickSort&lt; T &gt;'],['../class_node_quick_sort.html#af2fa0d52f7279c3491e36e48abcb085d',1,'NodeQuickSort::NodeQuickSort()']]],
+  ['nodeselectionsort_69',['NodeSelectionSort',['../class_node_selection_sort.html',1,'NodeSelectionSort&lt; T &gt;'],['../class_node_selection_sort.html#a46f8738c82a9e0003ecd0e3441683f22',1,'NodeSelectionSort::NodeSelectionSort()']]]
 ];
