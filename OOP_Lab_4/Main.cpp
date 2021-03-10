@@ -10,6 +10,7 @@
 #include "Lists Files/VectorList.h"
 #include "Lists Files/ArrayList.h"
 #include "Lists Files/ListSorter.h"
+#include "Lists Files/Iterators/NodeIterator.h"
 
 using namespace std;
 
@@ -105,7 +106,14 @@ void PrintVector(vector<pair<int, char>> t)
 	cout << endl;
 }
 
+void Start();
+
 int main()
+{
+	Start();
+}
+
+void Start()
 {
 	MainMenu();
 	while (state > 0 && state < 3)
@@ -153,12 +161,11 @@ int main()
 				}
 				MainMenu();
 			}
-			break;		
+			break;
 		default:
 			break;
 		}
-	}	
-	return 0;
+	}
 }
 
 int ProbMenu()

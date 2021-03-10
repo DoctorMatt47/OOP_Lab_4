@@ -88,6 +88,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +118,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,12 +153,36 @@
     <ClInclude Include="Dice Files\Face.h" />
     <ClInclude Include="Dice Files\Set.h" />
     <ClInclude Include="Lists Files\ArrayList.h" />
-    <ClInclude Include="Lists Files\IArray.h" />
     <ClInclude Include="Lists Files\IList.h" />
+    <ClInclude Include="Lists Files\Iterators\ArrayIterator.h" />
+    <ClInclude Include="Lists Files\Iterators\IArrayCollection.h" />
+    <ClInclude Include="Lists Files\Iterators\IEnumerable.h" />
+    <ClInclude Include="Lists Files\Iterators\Iterator.h" />
+    <ClInclude Include="Lists Files\Iterators\NodeIterator.h" />
     <ClInclude Include="Lists Files\LinkedList.h" />
     <ClInclude Include="Lists Files\ListSorter.h" />
     <ClInclude Include="Lists Files\Node.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayBubbleSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayBucketSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayCountingSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayGnomeSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayInsertionSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayMergeSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArrayQuickSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\ArraySelectionSort.h" />
+    <ClInclude Include="Lists Files\Sorts\ArraySort\IArraySort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeBubbleSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeBucketSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeCountingSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeGnomeSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeInsertionSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeQuickSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\NodeSelectionSort.h" />
+    <ClInclude Include="Lists Files\Sorts\NodeSort\INodeSort.h" />
     <ClInclude Include="Lists Files\VectorList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lists Files\Iterators\INodeCollection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

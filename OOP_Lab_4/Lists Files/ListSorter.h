@@ -3,7 +3,6 @@
 #include <algorithm>
 
 #include "LinkedList.h"
-#include "IArray.h"
 
 /**
  * \brief Sort algorithms for lists.
@@ -23,7 +22,7 @@ private:
 	 * \param comparePredicate Predicate used to compare elements the the array.
 	 * \return Mid number.
 	 */
-	static int Partition(IArray<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
+	static int Partition(IArrayCollection<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
 	
 	/**
 	 * Additional function for Quick sort algorithm.  
@@ -41,7 +40,7 @@ private:
 	 * \param high High limit
 	 * \param comparePredicate Predicate used to compare elements the the array.
 	 */
-	static void QuickSortRecursive(IArray<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
+	static void QuickSortRecursive(IArrayCollection<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * Additional function for Quick sort algorithm. 
@@ -75,7 +74,7 @@ private:
 	 * \param high High element index.
 	 * \param comparePredicate Predicate used to compare elements the the array.
 	 */
-	static void Merge(IArray<T>& list, int low, int mid, int high, std::function<bool(T, T)> comparePredicate);
+	static void Merge(IArrayCollection<T>& list, int low, int mid, int high, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * Additional function for Merge sort algorithm.
@@ -92,7 +91,7 @@ private:
 	 * \param high High element index.
 	 * \param comparePredicate Predicate used to compare elements the the array.
 	 */
-	static void MergeSortRecursive(IArray<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
+	static void MergeSortRecursive(IArrayCollection<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate);
 	
 public:
 
@@ -104,7 +103,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements the the array.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void GnomeSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void GnomeSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 	
 	/**
 	 * A function to sort a linked list using gnome sort algorithm.
@@ -112,7 +111,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the list.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void GnomeSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void GnomeSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * A function to sort an array using bubble sort algorithm.
@@ -120,7 +119,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the array.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void BubbleSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void BubbleSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * A function to sort a linked list using bubble sort algorithm.
@@ -128,7 +127,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the list.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void BubbleSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void BubbleSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * A function to sort an array using selection sort algorithm.
@@ -136,7 +135,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the array.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void SelectionSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void SelectionSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 	
 	/**
 	 * A function to sort a linked list using selection sort algorithm.
@@ -144,7 +143,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the list.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void SelectionSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void SelectionSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * A function to sort an array using insertion sort algorithm.
@@ -152,7 +151,7 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the array.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void InsertionSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void InsertionSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	* A function to sort a linked list using insertion sort algorithm.
@@ -160,7 +159,7 @@ public:
 	* \param comparePredicate Predicate used to compare elements at the list.
 	* Returns ​true if the first argument is greater than or equals to the second.
 	*/
-	static void InsertionSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void InsertionSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	 * A function to sort an array using quick sort algorithm.
@@ -168,14 +167,14 @@ public:
 	 * \param comparePredicate Predicate used to compare elements at the array.
 	 * Returns ​true if the first argument is greater than or equals to the second.
 	 */
-	static void QuickSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void QuickSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	* A function to sort a linked list using quick sort algorithm.
 	* \param list Linked list with data to be sorted.
 	* \param comparePredicate Predicate used to compare elements at the list.
 	*/
-	static void QuickSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void QuickSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	* A function to sort an array using merge sort algorithm.
@@ -183,7 +182,7 @@ public:
 	* \param comparePredicate Predicate used to compare elements at the array.
 	* Returns ​true if the first argument is greater than or equals to the second.
 	*/
-	static void MergeSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate);
+	static void MergeSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate);
 
 	/**
 	* A function to sort a linked list merge quick sort algorithm.
@@ -199,7 +198,7 @@ public:
 	* \param sortField Function returns field which used to compare elements at the list.
 	* This field must be an integer and not negative.
 	*/
-	static void CountingSort(IArray<T>& list, std::function<size_t(T)> sortField);
+	static void CountingSort(IArrayCollection<T>& list, std::function<size_t(T)> sortField);
 
 	/**
 	* A function to sort a linked list using counting sort algorithm.
@@ -207,7 +206,7 @@ public:
 	* \param sortField Function returns field which used to compare elements at the list.
 	* This field must be an integer and not negative.
 	*/
-	static void CountingSort(LinkedList<T>& list, std::function<size_t(T)> sortField);
+	static void CountingSort(INodeCollection<T>& list, std::function<size_t(T)> sortField);
 	
 	/**
 	* A function to sort an array using bucket sort algorithm.
@@ -215,7 +214,7 @@ public:
 	* \param sortField Function returns field which used to compare elements at the list.
 	* This field must be float and from zero to one.
 	*/
-	static void BucketSort(IArray<T>& list, std::function<float(T)> sortField);
+	static void BucketSort(IArrayCollection<T>& list, std::function<float(T)> sortField);
 
 	/**
 	* A function to sort an linked list using bucket sort algorithm.
@@ -223,11 +222,11 @@ public:
 	* \param sortField Function returns field which used to compare elements at the list.
 	* This field must be float and from zero to one.
 	*/
-	static void BucketSort(LinkedList<T>& list, std::function<float(T)> sortField);
+	static void BucketSort(INodeCollection<T>& list, std::function<float(T)> sortField);
 };
 
 template <class T>
-int ListSorter<T>::Partition(IArray<T>& list, const int low, const int high, std::function<bool(T, T)> comparePredicate)
+int ListSorter<T>::Partition(IArrayCollection<T>& list, const int low, const int high, std::function<bool(T, T)> comparePredicate)
 {
 	T pivot = list[high]; // pivot  
 	int i = (low - 1); // Index of smaller element  
@@ -281,7 +280,7 @@ Node<T>* ListSorter<T>::Partition(Node<T>* l, Node<T>* h, std::function<bool(T, 
 }
 
 template <class T>
-void ListSorter<T>::QuickSortRecursive(IArray<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::QuickSortRecursive(IArrayCollection<T>& list, int low, int high, std::function<bool(T, T)> comparePredicate)
 {
 	if (low < high)
 	{
@@ -323,6 +322,7 @@ Node<T>* ListSorter<T>::Split(Node<T>* head)
 }
 
 template <class T>
+
 Node<T>* ListSorter<T>::Merge(Node<T>* first, Node<T>* second, std::function<bool(T, T)> comparePredicate)
 {
 	// If first linked list is empty  
@@ -351,7 +351,7 @@ Node<T>* ListSorter<T>::Merge(Node<T>* first, Node<T>* second, std::function<boo
 }
 
 template <class T>
-void ListSorter<T>::Merge(IArray<T>& list, const int low, const int mid, const int high,
+void ListSorter<T>::Merge(IArrayCollection<T>& list, const int low, const int mid, const int high,
                           std::function<bool(T, T)> comparePredicate)
 {
 	int i, j;
@@ -425,7 +425,7 @@ Node<T>* ListSorter<T>::MergeSortRecursive(Node<T>* first, std::function<bool(T,
 }
 
 template <class T>
-void ListSorter<T>::MergeSortRecursive(IArray<T>& list, int low, int high,
+void ListSorter<T>::MergeSortRecursive(IArrayCollection<T>& list, int low, int high,
                                        std::function<bool(T, T)> comparePredicate)
 {
 	if (low < high)
@@ -443,7 +443,7 @@ void ListSorter<T>::MergeSortRecursive(IArray<T>& list, int low, int high,
 }
 
 template <class T>
-void ListSorter<T>::GnomeSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::GnomeSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	auto index = 0;
 
@@ -462,7 +462,7 @@ void ListSorter<T>::GnomeSort(IArray<T>& list, std::function<bool(T, T)> compare
 }
 
 template <class T>
-void ListSorter<T>::GnomeSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::GnomeSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	Node<T>* index = list.GetHead();
 
@@ -485,7 +485,7 @@ void ListSorter<T>::GnomeSort(LinkedList<T>& list, std::function<bool(T, T)> com
 }
 
 template <class T>
-void ListSorter<T>::BubbleSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::BubbleSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	for (auto i = 0; i < list.GetSize() - 1; i++)
 		for (auto j = 0; j < list.GetSize() - i - 1; j++)
@@ -494,7 +494,7 @@ void ListSorter<T>::BubbleSort(IArray<T>& list, std::function<bool(T, T)> compar
 }
 
 template <class T>
-void ListSorter<T>::BubbleSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::BubbleSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	/* Checking for empty list */
 	if (list.GetSize() <= 1)
@@ -524,7 +524,7 @@ void ListSorter<T>::BubbleSort(LinkedList<T>& list, std::function<bool(T, T)> co
 }
 
 template <class T>
-void ListSorter<T>::SelectionSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::SelectionSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	// One by one move boundary of unsorted subarray.
 	for (auto i = 0; i < list.GetSize() - 1; i++)
@@ -541,7 +541,7 @@ void ListSorter<T>::SelectionSort(IArray<T>& list, std::function<bool(T, T)> com
 }
 
 template <class T>
-void ListSorter<T>::SelectionSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::SelectionSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	Node<T>* temp = list.GetHead();
 
@@ -569,7 +569,7 @@ void ListSorter<T>::SelectionSort(LinkedList<T>& list, std::function<bool(T, T)>
 }
 
 template <class T>
-void ListSorter<T>::InsertionSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::InsertionSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	for (auto i = 1; i < list.GetSize(); i++)
 	{
@@ -589,7 +589,7 @@ void ListSorter<T>::InsertionSort(IArray<T>& list, std::function<bool(T, T)> com
 }
 
 template <class T>
-void ListSorter<T>::InsertionSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::InsertionSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	if (list.GetSize() <= 1) return;
 
@@ -612,30 +612,36 @@ void ListSorter<T>::InsertionSort(LinkedList<T>& list, std::function<bool(T, T)>
 }
 
 template <class T>
-void ListSorter<T>::QuickSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::QuickSort(INodeCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
+	auto tail = list.GetHead();
+	while (tail->GetNext())
+	{
+		tail = tail->GetNext();
+	}
 	if (list.GetSize() > 1)
-		QuickSortRecursive(list.GetHead(), list.GetTail(), comparePredicate);
+		QuickSortRecursive(list.GetHead(), tail, comparePredicate);
 }
 
 template <class T>
-void ListSorter<T>::QuickSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::QuickSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	if (list.GetSize() > 1)
 		QuickSortRecursive(list, 0, list.GetSize() - 1, comparePredicate);
 }
 
 template <class T>
-void ListSorter<T>::MergeSort(IArray<T>& list, std::function<bool(T, T)> comparePredicate)
+void ListSorter<T>::MergeSort(IArrayCollection<T>& list, std::function<bool(T, T)> comparePredicate)
 {
 	MergeSortRecursive(list, 0, list.GetSize() - 1, comparePredicate);
 }
 
 template <class T>
 void ListSorter<T>::MergeSort(LinkedList<T>& list, std::function<bool(T, T)> comparePredicate)
-{
+{	
 	if (list.GetSize() <= 1) return;
 	MergeSortRecursive(list.GetHead(), comparePredicate);
+
 	while (list.GetHead()->GetPrev())
 	{
 		list.MoveHead();
@@ -647,7 +653,7 @@ void ListSorter<T>::MergeSort(LinkedList<T>& list, std::function<bool(T, T)> com
 }
 
 template <class T>
-void ListSorter<T>::CountingSort(IArray<T>& list, std::function<size_t(T)> sortField)
+void ListSorter<T>::CountingSort(IArrayCollection<T>& list, std::function<size_t(T)> sortField)
 {
 	std::vector<T> output(list.GetSize());
 	
@@ -689,7 +695,7 @@ void ListSorter<T>::CountingSort(IArray<T>& list, std::function<size_t(T)> sortF
 }
 
 template <class T>
-void ListSorter<T>::CountingSort(LinkedList<T>& list, std::function<size_t(T)> sortField)
+void ListSorter<T>::CountingSort(INodeCollection<T>& list, std::function<size_t(T)> sortField)
 {
 	std::vector<size_t> buckets;
 	for (Node<T>* i = list.GetHead(); i != nullptr; i = i->GetNext())
@@ -717,11 +723,16 @@ void ListSorter<T>::CountingSort(LinkedList<T>& list, std::function<size_t(T)> s
 		result[destIndex] = i->GetData();
 	}
 
-	list.FillByVector(result);
+	auto node = list.GetHead();
+	for (auto i = 0; i < result.size(); i++)
+	{
+		node->SetData(result[i]);
+		node = node->GetNext();
+	}
 }
 
 template <class T>
-void ListSorter<T>::BucketSort(IArray<T>& list, std::function<float(T)> sortField)
+void ListSorter<T>::BucketSort(IArrayCollection<T>& list, std::function<float(T)> sortField)
 {
 	// 1) Create n empty buckets 
 	std::vector<std::vector<T>> b(list.GetSize());
@@ -748,7 +759,7 @@ void ListSorter<T>::BucketSort(IArray<T>& list, std::function<float(T)> sortFiel
 }
 
 template <class T>
-void ListSorter<T>::BucketSort(LinkedList<T>& list, std::function<float(T)> sortField)
+void ListSorter<T>::BucketSort(INodeCollection<T>& list, std::function<float(T)> sortField)
 {
 	// 1) Create n empty buckets
 	auto n = list.GetSize();
