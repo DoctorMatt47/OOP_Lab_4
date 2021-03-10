@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['samesizetupleprefixcomparator_163',['SameSizeTuplePrefixComparator',['../structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator.html',1,'std::tr1::gtest_internal']]],
+  ['samesizetupleprefixcomparator_3c_200_2c_200_20_3e_164',['SameSizeTuplePrefixComparator&lt; 0, 0 &gt;',['../structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator_3_010_00_010_01_4.html',1,'std::tr1::gtest_internal']]],
+  ['samesizetupleprefixcomparator_3c_20k_2c_20k_20_3e_165',['SameSizeTuplePrefixComparator&lt; k, k &gt;',['../structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator_3_01k_00_01k_01_4.html',1,'std::tr1::gtest_internal']]],
+  ['scoped_5fptr_166',['scoped_ptr',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20_3a_3astd_3a_3astringstream_20_3e_167',['scoped_ptr&lt; ::std::stringstream &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20const_20_3a_3astd_3a_3astring_20_3e_168',['scoped_ptr&lt; const ::std::string &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20const_20t_20_3e_169',['scoped_ptr&lt; const T &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20gtest_5fflag_5fsaver_5f_20_3e_170',['scoped_ptr&lt; GTEST_FLAG_SAVER_ &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20testing_3a_3ainternal_3a_3aparamiteratorinterface_3c_20t_20_3e_20_3e_171',['scoped_ptr&lt; testing::internal::ParamIteratorInterface&lt; T &gt; &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scoped_5fptr_3c_20testing_3a_3ainternal_3a_3atestmetafactorybase_3c_20paramtype_20_3e_20_3e_172',['scoped_ptr&lt; testing::internal::TestMetaFactoryBase&lt; ParamType &gt; &gt;',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
+  ['scopedtrace_173',['ScopedTrace',['../classtesting_1_1_scoped_trace.html',1,'testing']]],
+  ['selectionsort_174',['SelectionSort',['../class_list_sorter.html#a6fce82f2c6497c52a9f0552558b6f5da',1,'ListSorter::SelectionSort(IArrayCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)'],['../class_list_sorter.html#afd1cd463ec7401a9c957abf50b917863',1,'ListSorter::SelectionSort(INodeCollection&lt; T &gt; &amp;list, std::function&lt; bool(T, T)&gt; comparePredicate)']]],
+  ['set_175',['Set',['../class_set.html',1,'Set'],['../class_set.html#a1c5d4bec6a962eb5805cf9a7321e241d',1,'Set::Set()']]],
+  ['setamountoffaces_176',['SetAmountOfFaces',['../class_dice.html#af99dec3b17586ffeaec7fae5151c64fb',1,'Dice']]],
+  ['setdata_177',['SetData',['../class_node.html#ae64b72ace3bc47b80fe6a44b45fd944c',1,'Node']]],
+  ['setnext_178',['SetNext',['../class_node.html#ab6e18fc3f5c9bef5518a38070a6cc7d6',1,'Node']]],
+  ['setnumber_179',['SetNumber',['../class_face.html#a3dff44eaae310e4ff01b51e1749c35d4',1,'Face']]],
+  ['setprev_180',['SetPrev',['../class_node.html#af4620f4788d09b34f4ac252483658e3f',1,'Node']]],
+  ['setprobability_181',['SetProbability',['../class_face.html#af0fc62e5fe04d98a1b5e9d17122a3fc6',1,'Face']]],
+  ['staticasserttypeeqhelper_182',['StaticAssertTypeEqHelper',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper.html',1,'testing::internal']]],
+  ['staticasserttypeeqhelper_3c_20t_2c_20t_20_3e_183',['StaticAssertTypeEqHelper&lt; T, T &gt;',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper_3_01_t_00_01_t_01_4.html',1,'testing::internal']]],
+  ['string_184',['String',['../classtesting_1_1internal_1_1_string.html',1,'testing::internal']]]
+];
