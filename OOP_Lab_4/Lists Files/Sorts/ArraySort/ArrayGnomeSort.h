@@ -4,6 +4,10 @@
 #include "IArraySort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents gnome sort of the array collection.
+ * \tparam T Type of data, that is in the array collection.
+ */
 template <class T>
 class ArrayGnomeSort final : public IArraySort<T>
 {
@@ -11,6 +15,10 @@ private:
 	std::function<bool(T, T)> _comparePredicate;
 	
 public:
+	/**
+	* Constructs gnome sort object.
+	* \param comparePredicate Predicate used to compare elements at the array.
+	*/
 	explicit ArrayGnomeSort(std::function<bool(T, T)> comparePredicate);
 	
 	void Execute(IArrayCollection<T>& list) override;

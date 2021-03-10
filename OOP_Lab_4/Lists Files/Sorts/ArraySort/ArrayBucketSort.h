@@ -5,6 +5,10 @@
 #include "IArraySort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents bucket sort of the array collection.
+ * \tparam T Type of data, that is in the array collection.
+ */
 template <class T>
 class ArrayBucketSort final : public IArraySort<T>
 {
@@ -12,6 +16,11 @@ private:
 	std::function<float(T)> _sortField;
 
 public:
+	/**
+	* Constructs bucket sort object.
+	* \param sortField Function returns field which used to compare elements at the list.
+	* This field must be float and from zero to one.
+	*/
 	explicit ArrayBucketSort(std::function<float(T)> sortField);
 
 	void Execute(IArrayCollection<T>& list) override;

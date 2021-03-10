@@ -4,17 +4,38 @@
 #include "IArraySort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents quick sort of the array collection.
+ * \tparam T Type of data, that is in the array collection.
+ */
 template <class T>
 class ArrayQuickSort final : public IArraySort<T>
 {
 private:
 	std::function<bool(T, T)> _comparePredicate;
 
+	/**
+	 * \brief Additional function for Quick sort algorithm. 
+	 * \param list Array collection to be sorted.
+	 * \param low Bottom limit.
+	 * \param high Top limit.
+	 * \return Mid number.
+	 */
 	int Partition(IArrayCollection<T>& list, int low, int high);
 
+	/**
+	 * Quick sort recursive.
+	 * \param list Array collection to be sorted.
+	 * \param low Bottom limit.
+	 * \param high Top limit.
+	 */
 	void QuickSortCore(IArrayCollection<T>& list, int low, int high);
 
 public:
+	/**
+	* Constructs quick sort object.
+	* \param comparePredicate Predicate used to compare elements at the array.
+	*/
 	explicit ArrayQuickSort(std::function<bool(T, T)> comparePredicate);
 
 	void Execute(IArrayCollection<T>& list) override;

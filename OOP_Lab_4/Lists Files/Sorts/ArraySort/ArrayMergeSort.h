@@ -4,17 +4,38 @@
 #include "IArraySort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents merge sort of the array collection.
+ * \tparam T Type of data, that is in the array collection.
+ */
 template <class T>
 class ArrayMergeSort final : public IArraySort<T>
 {
 private:
 	std::function<bool(T, T)> _comparePredicate;
 
+	/**
+	 * Merges two subarrays. 
+	 * \param list Array collection to be sorted.
+	 * \param low Bottom limit.
+	 * \param mid Middle element.
+	 * \param high Top limit.
+	 */
 	void MergeCore(IArrayCollection<T>& list, int low, int mid, int high);
 
+	/**
+	 * Merge sort recursive algorithm.
+	 * \param list Array collection to be sorted.
+	 * \param low Bottom limit.
+	 * \param high Top limit.
+	 */
 	void MergeSortCore(IArrayCollection<T>& list, int low, int high);
 
 public:
+	/**
+	* Constructs quick sort object.
+	* \param comparePredicate Predicate used to compare elements at the array.
+	*/
 	explicit ArrayMergeSort(std::function<bool(T, T)> comparePredicate);
 
 	void Execute(IArrayCollection<T>& list) override;

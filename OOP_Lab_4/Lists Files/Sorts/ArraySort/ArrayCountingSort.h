@@ -4,6 +4,10 @@
 #include "IArraySort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents counting sort of the array collection.
+ * \tparam T Type of data, that is in the array collection.
+ */
 template <class T>
 class ArrayCountingSort final : public IArraySort<T>
 {
@@ -11,6 +15,11 @@ private:
 	std::function<size_t(T)> _sortField;
 
 public:
+	/**
+	* Constructs counting sort object.
+	* \param sortField Function returns field which used to compare elements at the list.
+	* This field must be an integer and not negative.
+	*/
 	explicit ArrayCountingSort(std::function<size_t(T)> sortField);
 
 	void Execute(IArrayCollection<T>& list) override;

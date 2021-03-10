@@ -6,6 +6,11 @@
 
 using std::make_shared;
 
+/**
+ * \brief Represents access to elements of the node collection.
+ * Provides access to elements of the node collection and methods to iterate it.
+ * \tparam T Type of data, that is in the collection.
+ */
 template <class T>
 class NodeIterator final : public Iterator<T>
 {
@@ -14,6 +19,10 @@ private:
 	Node<T>* _current;
 	
 public:
+	/**
+	 * Constructs a node iterator.
+	 * \param enumerable Node collection.
+	 */
 	explicit NodeIterator(shared_ptr<INodeCollection<T>> enumerable);
 
 	T First() override;

@@ -6,6 +6,11 @@
 
 using std::make_shared;
 
+/**
+ * \brief Represents access to elements of the array collection.
+ * Provides access to elements of the array collection and methods to iterate it.
+ * \tparam T Type of data, that is in the collection.
+ */
 template <class T>
 class ArrayIterator final : public Iterator<T>
 {
@@ -15,6 +20,10 @@ private:
 	int _current = 0;
 
 public:
+	/**
+	 * Constructs the array iterator.
+	 * \param enumerable Pointer to the array collection.
+	 */
 	explicit ArrayIterator(shared_ptr<IArrayCollection<T>> enumerable);
 
 	T First() override;

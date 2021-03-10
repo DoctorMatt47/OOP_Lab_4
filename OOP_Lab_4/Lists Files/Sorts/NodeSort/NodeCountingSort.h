@@ -4,6 +4,10 @@
 #include "INodeSort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents counting sort of the node collection.
+ * \tparam T Type of data, that is in the node collection.
+ */
 template <class T>
 class NodeCountingSort final : public INodeSort<T>
 {
@@ -11,6 +15,11 @@ private:
 	std::function<size_t(T)> _sortField;
 
 public:
+	/**
+	* Constructs counting sort object.
+	* \param sortField Function returns field which used to compare elements at the list.
+	* This field must be an integer and not negative.
+	*/
 	explicit NodeCountingSort(std::function<size_t(T)> sortField);
 
 	void Execute(INodeCollection<T>& list) override;

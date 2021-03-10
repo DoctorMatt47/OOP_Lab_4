@@ -5,6 +5,10 @@
 #include "INodeSort.h"
 #include "../../Iterators/IArrayCollection.h"
 
+/**
+ * \brief Represents bucket sort of the node collection.
+ * \tparam T Type of data, that is in the node collection.
+ */
 template <class T>
 class NodeBucketSort final : public INodeSort<T>
 {
@@ -12,6 +16,11 @@ private:
 	std::function<float(T)> _sortField;
 
 public:
+	/**
+	* Constructs bucket sort object.
+	* \param sortField Function returns field which used to compare elements at the list.
+	* This field must be float and from zero to one.
+	*/
 	explicit NodeBucketSort(std::function<float(T)> sortField);
 
 	void Execute(INodeCollection<T>& list) override;
