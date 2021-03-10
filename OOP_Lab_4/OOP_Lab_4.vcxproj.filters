@@ -125,5 +125,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Lists Files\Iterators\INodeCollection.h" />
+    <None Include="Uml files\ClassDiagram.cd" />
   </ItemGroup>
 </Project>
